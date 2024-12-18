@@ -119,10 +119,13 @@ public class Game {
             System.out.println("Enemy health: " + enemy.getHP());
         }
         if(player.getHP() > 0) {
+            System.out.print("\u001b[32m");
             System.out.println("\nPlayer is the winner!");
         } else if(enemy.getHP() > 0) {
+            System.out.print("\u001b[31m");
             System.out.println("\nEnemy is the winner!");
         } else {
+            System.out.print("\u001b[33m");
             System.out.println("\nNeither won!");
         }
 
